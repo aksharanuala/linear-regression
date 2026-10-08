@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Chance Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="container"> 
+    <h1>Admission Chance Predictor</h1>
+
+    <label>GRE Score:</label>
+    <input type="number" id="gre" min="0" max="340" required>
+
+
+    <br><br>
+
+    <label>TOEFL Score:</label>
+    <input type="number" id="toefl" min="0" max="120" required>
+
+    <br><br>
+
+    <label>LOR Rating (1-5):</label>
+    <input type="number" id="lor" min="1" max="5" required>
+
+    <br><br>
+
+    <label>CGPA:</label>
+    <input type="number" id="cgpa" min="0" max="10" step="0.01" required>
+
+    <br><br>
+
+    <label>Research:</label>
+    <select id="research">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="predict()">Predict Chance</button>
+
+    <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
